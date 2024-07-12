@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="TeacherAddQuestion.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-box">
+            <a href="TeacherTestGrades.html">ТЕСТЫ/ОЦЕНКИ</a>
+          </div>
+          <div class="header-box">
+            <a href="TeacherAddQuestion.html">ВОПРОСЫ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__col-form">
+      <form id="question-form">
+        <input type="text" id="question-input" placeholder="Question" />
+        <p>Answers</p>
+        <div id="answers-container">
+          <input type="text" class="answer-input" placeholder="Answer 1" />
+          <input type="text" class="answer-input" placeholder="Answer 2" />
+          <input type="text" class="answer-input" placeholder="Answer 3" />
+          <input type="text" class="answer-input" placeholder="Answer 4" />
+        </div>
+        <button type="submit">Add Question</button>
+      </form>
+    </div>
+
+    <script src="TeacherAddQuestion.js"></script>
+  </body>
+</html>

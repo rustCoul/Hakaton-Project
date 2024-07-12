@@ -1,0 +1,136 @@
+.header-box {
+  margin-bottom: 33px;
+  margin-top: 20px;
+}
+.container {
+  max-width: 1325px;
+  padding: 15px auto;
+  margin: 0 auto;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14.4px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #aa84f9;
+  padding: 17px 27px;
+  cursor: pointer;
+  height: 14px;
+  width: 60px;
+  margin-right: 100px;
+}
+.courses__inner {
+  position: relative;
+}
+
+.courses-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+.course__item {
+  width: 295px;
+  height: 375px;
+  border: 3px solid #000;
+  position: relative;
+}
+.course__item-number {
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  font-size: 20.83px;
+  line-height: 36px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  align-items: center;
+}
+
+.course__item-title {
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  font-size: 33.33px;
+  line-height: 50.2px;
+  text-transform: uppercase;
+  margin-top: 70px;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 23px;
+  position: relative;
+}
+.course__item-title::after {
+  position: absolute;
+  width: 55px;
+  border-bottom: 3px solid #aa84f9;
+  border-radius: 15%;
+  display: block;
+  content: "";
+  left: 42%;
+
+  bottom: 0;
+}
+.course__item-title span {
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  font-size: 33.33px;
+  line-height: 50.2px;
+  color: #aa84f9;
+}
+.course__item-text {
+  font-size: 14.25px;
+  font-family: "Krub", sans-serif;
+  font-weight: 600;
+  line-height: 26.73px;
+  text-align: center;
+  padding: 0 38px 0 38px;
+}
+.course__item-btn {
+  position: absolute;
+  top: 255px;
+  left: 91px;
+}
+.course__item-btn a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14.4px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #aa84f9;
+  padding: 17px 27px;
+  cursor: pointer;
+  height: 50px;
+  width: 125px;
+}
+.courses__link {
+  text-align: center;
+  position: relative;
+}
+.courses__link a {
+  font-size: 16.17px;
+  font-family: "Krub", sans-serif;
+  font-weight: 700;
+  line-height: 23.09px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.courses__link a::after {
+  content: "";
+  background-image: url(../images/Arrow.svg);
+  position: absolute;
+  right: 502px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75px;
+  height: 30px;
+}

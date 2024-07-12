@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="footer__col-form">
+      <div class="footer__title">Quick Contact</div>
+      <form>
+        <select name="2" id="2" onchange="toggle()">
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+        </select>
+        <div id="1">
+          <p>Group</p>
+          <input list="Group" name="Group" />
+        </div>
+        <p>Name</p>
+        <input type="text" list="Name" />
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          name="password"
+        />
+        <button type="submit" onclick="OpenPage();return false;"">Send</button>
+      </form>
+      <datalist id="Group">
+        <option>303</option>
+        <option>304</option>
+      </datalist>
+      <datalist id="Name">
+        <option>Artem</option>
+        <option>Temirlan</option>
+      </datalist>
+    </div>
+  </body>
+  <script>
+    function toggle() {
+      var cont = document.getElementById("1");
+      var a = document.getElementById("2");
+      if (a.selectedIndex == 1) {
+        cont.style.display = "none";
+      } else {
+        cont.style.display = "block";
+      }
+    }
+
+    function OpenPage() {
+      var password = document.getElementById("password");
+      if (password.value == "apple" && document.getElementById("2").selectedIndex ==0  ) {
+        window.location.href = "StudentTest.html";
+      }else if(password.value == "apple" && document.getElementById("2").selectedIndex ==1) {
+         window.location.href = "TeacherTestGrades.html";
+      } else {
+        alert("Incorrect password!");
+      }
+    }
+  </script>
+</html>
